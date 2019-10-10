@@ -40,10 +40,10 @@ with the following function:
 
 io.socket.client.Socket socket = IO.socket("http://ip.of.ra.pi:3000");
 socket.on("x", new Emitter.Listener() {
-		@Override
-		public void call(Object... args) {		
-			System.out.println(args[0]);
-	  }
+	@Override
+	public void call(Object... args) {		
+		System.out.println(args[0]);
+	}
 });  
 socket.connect();
 ```
