@@ -14,12 +14,36 @@ To make sure everything is working, got to http://ip.of.ra.pi:3000. If you see a
 Good job, you've made it through!
 You can now start configuring your lemonlight!
 
-On your java project, import the following libraries:
+On your java project, import all the jar from the jar_files directory. Your java class should look like this:
+```java
+package demo;
 
+import io.socket.global.*;
+import io.socket.emitter.*;
 
+import java.net.Socket;
+import java.net.URISyntaxException;
+
+import io.socket.client.*;
+import io.socket.engineio.client.transports.*;
+import io.socket.engineio.*;
+
+```
+You're now done configuring everything!
 
 
 <a name="usage"></a>
 ## Usage
+In your java class, you could listen for ```x, y, width, height```
+with the following function:
+```java
 
-sometext
+io.socket.client.Socket socket = IO.socket("http://ip.of.ra.pi:3000");
+socket.on("x", new Emitter.Listener() {
+		@Override
+		public void call(Object... args) {		
+			System.out.println(args[0]);
+	  }
+});  
+socket.connect();
+```
