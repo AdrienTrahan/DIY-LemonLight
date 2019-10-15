@@ -6,7 +6,7 @@ This a project that allows FRC teams to use object detection only with a raspber
 
 <a name="install"></a>
 ## Installation
-Clone the "boot.zip" file from the flash folder in the current directory.
+Download the LemonLight.img image file from the drive.
 Now, format your sd card. When the process is finished, use balena etcher to flash the sd card with the boot.zip file you just cloned.
 When you're done, put the sd card in the sd card slot in the raspberry pi, and plug the ethernet. When you're done, install [fing](https://www.fing.com/). From the same device, change your wifi settings to your robot's, and start scanning the wifi. Find the raspberry pi's ip adress, and remember it!
 
