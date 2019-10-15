@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-1.12.4.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+    <script src="socket.io.js"></script>
+    <style>
+      @import url('font.css?family=Poppins&display=swap');
+      @import url('font2.css?family=Roboto&display=swap');
+    </style>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="first">
+      <select id="pipelineSelect">
+        <option class="pipeline" value="1">pipeline 1</option>
+      </select>
+      <img class="plus" src="plus.png" onclick="$.get(window.location.href + 'addPipeline?', function( data ) {
+      });setTimeout(function(){refresh()}, 500)" alt="">
+      <img class="moins" src="moins.png" onclick="$.get(window.location.href + 'removePipeline?', function( data ) {
+      });setTimeout(function(){refresh()}, 500)" alt="">
+
+    <div class="">
+      <h1 class="range">Range</h1>
+
+      <input value="0°" class="modRange" id="huemin" type="text"><div id="hue"></div><input class="modRange" value="360°" id="huemax" type="text">
+      <input value="0" class="modRange" id="satmin" type="text"><div id="saturation"></div><input class="modRange" value="255" id="satmax" type="text">
+      <input value="0" class="modRange" id="valmin" type="text"><div id="value"></div><input class="modRange" value="255" id="valmax" type="text">
+
+      </div>
+    </div>
+    </div>
+    <div class="second">
+      <div class="imageContainer">
+        <img id="image" src=""  alt="">
+        <h1 class="message">Looking for image...</h1>
+      </div>
+      <h1 class="width">width: 0px</h1>
+      <h1 class="height">height: 0px</h1>
+      <h1 class="x">x: 0px</h1>
+      <h1 class="y">y: 0px</h1>
+      <select class="imageSelect">
+        <option class="view" value="1">normal</option>
+        <option class="view" value="2">masked</option>
+        <option class="view" value="3">thresholded</option>
+        <option class="view" value="4">final</option>
+      </select>
+    </div>
+
+  </body>
+</html>
