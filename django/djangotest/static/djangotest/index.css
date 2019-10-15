@@ -1,0 +1,79 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1b1d1f;
+}
+
+h1{
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#modified{
+    position: static;
+    margin-top: 20px;
+    left: 20px;
+    float: right;
+    margin-right: 20px;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+#clean{
+    position: static;
+    margin-top: 20px;
+    left: 20px;
+    float: left;
+    margin-left: 20px;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+#huetit{
+    margin-bottom: 0px;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#hueimage{
+    position: static;
+    width: 200px;
+    margin-left: 20px;
+}
+#hue{
+    width: 200px !important;
+    margin-left: 20px;
+}
+#sattit{
+    margin-bottom: 0px;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#saturation{
+    width: 200px !important;
+    margin-left: 20px;
+}
+#valtit{
+    margin-bottom: 0px;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#value{
+    width: 200px !important;
+    margin-left: 20px;
+}
+#noisetit{
+    margin-bottom: 0px;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#noise{
+    width: 200px !important;
+    margin-left: 20px;
+}
