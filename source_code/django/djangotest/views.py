@@ -99,7 +99,7 @@ def image(request):
     mask = cv2.inRange(hsv, (pipelines[current - 1]['minhue'], pipelines[current - 1]['minsat'], pipelines[current - 1]['minval']), (pipelines[current - 1]['maxhue'], pipelines[current - 1]['maxsat'], pipelines[current - 1]['maxval']))
     blurred = cv2.blur(mask, (10, 10))
     holla, thresholded = cv2.threshold(blurred, 0, 255, cv2.THRESH_BINARY)
-    _, cont, hierarchy = cv2.findContours(thresholded, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    cont, hierarchy = cv2.findContours(thresholded, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     if (len(cont) > 0):
         best = 0
         w = 0
