@@ -22,7 +22,7 @@ The pi transmits its data using a websocket.
 To make sure everything works, go to http://ip.of.ra.pi:3000. If you see a configuration screen.
 Good job, you've made it through!
 You can now start configuring your lemonlight!
-
+![](name-of-giphy.gif)
 On your java project, import all the jar from the jar_files directory. Your java class should look like this:
 ```java
 package demo;
