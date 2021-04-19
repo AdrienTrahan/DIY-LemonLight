@@ -13,6 +13,7 @@ Launch servers with the following commands:
 Inside the django folder run:
 python manage.py runserver
 Inside the nodejs folder run:
+npm install (once)
 node .
 
 To run servers on startup, add these commands to startup.sh.
