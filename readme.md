@@ -11,6 +11,7 @@ Boot a raspberry pi with the latest Raspbian release (console only can do the tr
 Transfer above file on the Desktop folder.
 Launch servers with the following commands:
 Inside the django folder run:
+pip install django
 python manage.py runserver
 Inside the nodejs folder run:
 npm install (once)
