@@ -1,6 +1,7 @@
 # LemonLight
 This a project that allows FRC teams to use object detection only with a raspberry pi and a webcam. The raspberry pi acts as a web server, so it could be accessed from any device on the same network. The ultimate goal of this project is to provide a cheap and easy alternative to young and growing frc teams.
 
+![](demo.gif)
 * [ Installation. ](#install)
 * [ Usage ](#usage)
 
@@ -22,8 +23,8 @@ The pi transmits its data using a websocket.
 To make sure everything works, go to http://ip.of.ra.pi:3000. If you see a configuration screen.
 Good job, you've made it through!
 You can now start configuring your lemonlight!
-![](demo.gif)
-On your java project, import all the jar from the jar_files directory. Your java class should look like this:
+
+On your java project, import all the jar from the jar_files directory. Your imports should look like this:
 ```java
 package demo;
 
