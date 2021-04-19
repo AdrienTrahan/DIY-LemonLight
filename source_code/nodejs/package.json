@@ -16,11 +16,5 @@
     "path": "^0.12.7",
     "socket.io": "^2.3.0",
     "xmlhttprequest": "^1.8.0"
-  },
-  "opencv4nodejs": {
-    "disableAutoBuild": 1,
-    "opencvIncludeDir": "C:\\opencv\\build\\include",
-    "opencvLibDir": "C:\\opencv\\build\\x64\\vc14\\lib",
-    "opencvBinDir": "C:\\opencv\\build\\x64\\vc14\\bin"
   }
 }
