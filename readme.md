@@ -46,7 +46,7 @@ You're now done configuring everything!
 
 <a name="usage"></a>
 ## Usage
-In your java class, you could listen for ```x, y, width, height```
+You can listen for ```x, y, width, height```
 with the following function:
 ```java
 
